@@ -1,12 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>         
 #include <locale.h>
 #include <time.h>
 
 
 int main() {
-    setlocale(LC_ALL, "PORTUGUESE");
+    setlocale(LC_ALL, "Portuguese");
     int opcao;
     char novamente;
     int tentativas;     // variavel de controle de tentativas

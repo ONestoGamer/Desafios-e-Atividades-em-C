@@ -22,6 +22,14 @@ int main() {
             }        
         }
     }
-    printf("\n\nA soma dos valores da matriz é de: %d\n", soma_total);  // Exibe a soma total dos elementos da matriz
-    printf("A soma dos elementos da diagonal principal é de: %d\n", soma_diag); // Exibe a soma dos elementos da diagonal principal
+    // Exibição da matriz
+    for (lin=0; lin<4; lin++) {
+        for (col=0; col<4; col++){
+            printf("%d\t", valores[lin][col]); // Exibe cada elemento da matriz
+        }
+        printf("\n"); // Nova linha após cada linha da matriz
+    }
+        printf("\n\nA soma dos valores da matriz é de: %d\n", soma_total);  // Exibe a soma total dos elementos da matriz
+        printf("A soma dos elementos da diagonal principal é de: %d\n", soma_diag); // Exibe a soma dos elementos da diagonal principal
+
 }

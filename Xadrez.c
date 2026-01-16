@@ -10,7 +10,6 @@ e utilizando loops complexos com múltiplas
 variáveis e condições para refinar seus códigos, demonstrando maestria na manipulação de estruturas de repetição. */ 
 
 #include <stdio.h>
-#include <stdlib.h>
 
 #define TABULEIRO 8   // tamanho do tabuleiro
 #define PASSOS 2      // número de casas para recursão
