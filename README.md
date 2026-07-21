@@ -332,69 +332,66 @@ O repositório também possui ao menos um arquivo com extensão `.cpp`. Portanto
 
 ---
 
-## 📁 Estrutura atual resumida
+## 📁 Organização do repositório
 
-```text
-Desafios-e-Atividades-em-C/
-│
-├── Adivinhacao.c
-├── PedraPapelTesoura.c
-├── Xadrez.c
-├── supertrunfo.c
-├── Sistema_Simples_Saque_Deposito.c
-├── Desafio_Final_FSF.c
-├── Desafio1_de_365.c
-├── Desafio2_de_365.c
-├── Desafio4_de_365.cpp
-├── Aula11_Matrizes_Ex1.c
-├── Aula11_Matrizes_Ex2.c
-├── Aula11_Matrizes_Atv1a.c
-├── Aula11_Matrizes_Atv1b.c
-├── Aula11_Matrizes_Atv1c.c
-├── Aula11_Matrizes_Desafio.c
-├── Aula12_Var_Compostas.c
-├── Questao5.c
-├── questao9.c
-├── README.md
-└── arquivos de configuração da IDE
-```
-
----
-
-## 📂 Organização recomendada
-
-Para facilitar a navegação, o repositório poderá ser reorganizado assim:
+Os exercícios estão organizados por assunto para facilitar a navegação e acompanhar a evolução dos estudos.
 
 ```text
 Desafios-e-Atividades-em-C/
 │
 ├── 01-fundamentos/
+│   ├── Desafio1_de_365.c
+│   └── Exemplo_aula4.cpp
 │
 ├── 02-condicionais/
+│   ├── Desafio4_de_365.cpp
+│   ├── desafio1Leo.c
+│   └── questao9.c
 │
 ├── 03-repeticao/
+│   ├── Desafio2_de_365.c
+│   ├── Questao5.c
+│   └── questão_10.cpp
 │
 ├── 04-vetores/
+│   └── Aula12_Var_Compostas.c
 │
 ├── 05-matrizes/
-│   ├── exercicio-01.c
-│   ├── exercicio-02.c
-│   └── desafio.c
+│   ├── Aula11_Matrizes_Atv1a.c
+│   ├── Aula11_Matrizes_Atv1b.c
+│   ├── Aula11_Matrizes_Atv1c.c
+│   ├── Aula11_Matrizes_Desafio.c
+│   ├── Aula11_Matrizes_Ex1.c
+│   └── Aula11_Matrizes_Ex2.c
 │
 ├── 06-jogos/
-│   ├── adivinhacao.c
-│   ├── pedra-papel-tesoura.c
-│   ├── xadrez.c
-│   └── super-trunfo.c
+│   ├── Adivinhacao.c
+│   ├── PedraPapelTesoura.c
+│   ├── Xadrez.c
+│   └── supertrunfo.c
 │
 ├── 07-sistemas/
-│   └── sistema-bancario.c
+│   └── Sistema_Simples_Saque_Deposito.c
 │
 ├── 08-avaliacoes/
+│   └── Desafio_Final_FSF.c
 │
 ├── .gitignore
 └── README.md
 ```
+
+### Categorias
+
+| Diretório         | Conteúdo                                   |
+| ----------------- | ------------------------------------------ |
+| `01-fundamentos`  | Sintaxe, variáveis, entrada e saída        |
+| `02-condicionais` | Exercícios com `if`, `else` e `switch`     |
+| `03-repeticao`    | Atividades com `for`, `while` e `do while` |
+| `04-vetores`      | Exercícios com arrays unidimensionais      |
+| `05-matrizes`     | Matrizes e laços aninhados                 |
+| `06-jogos`        | Jogos desenvolvidos no terminal            |
+| `07-sistemas`     | Pequenos sistemas interativos              |
+| `08-avaliacoes`   | Atividades avaliativas                     |
 
 ---
 
@@ -404,61 +401,67 @@ Desafios-e-Atividades-em-C/
 
 É necessário possuir:
 
+* Git;
 * compilador GCC;
-* terminal;
-* Git.
+* terminal.
 
-Verifique o GCC:
+Verifique o compilador:
 
 ```bash
 gcc --version
 ```
 
----
-
-### 1. Clone o repositório
+### Clone o repositório
 
 ```bash
 git clone https://github.com/ONestoDev/Desafios-e-Atividades-em-C.git
 ```
 
-### 2. Acesse a pasta
+Acesse a pasta:
 
 ```bash
 cd Desafios-e-Atividades-em-C
 ```
 
-### 3. Compile um exercício
+### Compile um exercício
 
-Exemplo com o jogo de adivinhação:
-
-#### Linux ou macOS
+Jogo de adivinhação:
 
 ```bash
-gcc Adivinhacao.c -o adivinhacao
+gcc -Wall -Wextra -pedantic \
+    06-jogos/Adivinhacao.c \
+    -o adivinhacao
 ```
 
-#### Windows
+Super Trunfo:
 
 ```bash
-gcc Adivinhacao.c -o adivinhacao.exe
+gcc -Wall -Wextra -pedantic \
+    06-jogos/supertrunfo.c \
+    -o supertrunfo
 ```
 
-### 4. Execute
+Sistema bancário:
 
-#### Linux ou macOS
+```bash
+gcc -Wall -Wextra -pedantic \
+    07-sistemas/Sistema_Simples_Saque_Deposito.c \
+    -o sistema-bancario
+```
+
+### Execute no Linux ou macOS
 
 ```bash
 ./adivinhacao
 ```
 
-#### Windows
+### Execute no Windows
 
 ```bash
 adivinhacao.exe
 ```
 
----
+> Cada arquivo possui sua própria função `main` e deve ser compilado separadamente.
 
 ## ▶️ Executando o Super Trunfo
 
